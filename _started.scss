@@ -1,0 +1,61 @@
+.started {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    border-radius: 30px;
+    background-color: #fbfbfb;
+    position: relative;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    *:not(img) {
+        position: relative;
+        z-index: 100;
+    }
+    &-heading {
+        margin-bottom: 30px;
+
+    }
+    &-desc {
+        max-width: 245px;
+        margin-bottom: 50px;
+        color: $gray-dark;
+    }
+    &-caption {
+        margin-bottom: 20px;
+    }
+    &-comment {
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+        width: 25%;
+    }
+    &-smile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        transform: translate(35%, -30%);
+    }
+    @media screen and (max-width: 1023px) {
+        &-comment {
+            left: 25px;
+        }
+        &-smile {
+            transform: none;
+
+        }
+    }
+    @media screen and (max-width: 767px) {
+        margin-top: 0;
+        &-comment {
+            left: 25px;
+        }
+        &-smile {
+            transform: none;
+
+        }
+    
+}
+}
