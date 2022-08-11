@@ -49,9 +49,17 @@ body {
         color: white;
         background-color: $primary-color;
     }
+    &--primary:hover,
+    &--primary:focus {
+        transform: scale(1.1);
+    }
     &--outline {
         border: 1px solid;
         color: $gray-light;
+    }
+    &--outline:hover,
+    &--outline:focus {
+        transform: scale(1.1);
     }
 }
 

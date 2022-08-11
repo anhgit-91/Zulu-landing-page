@@ -56,9 +56,15 @@ body {
   color: white;
   background-color: #579aff;
 }
+.button--primary:hover, .button--primary:focus {
+  transform: scale(1.1);
+}
 .button--outline {
   border: 1px solid;
   color: #9aa3af;
+}
+.button--outline:hover, .button--outline:focus {
+  transform: scale(1.1);
 }
 
 .block {
